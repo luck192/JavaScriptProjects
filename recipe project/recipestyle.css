@@ -1,0 +1,131 @@
+*{
+  margin:0px ;
+  padding: 0px;
+  box-sizing: border-box;  
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    border: 3px solid black;
+    background-color: rgba(179, 179, 179, 0.375);
+}
+.navbar{
+    padding-top:20px;
+    width: 100%;
+    height: auto;
+
+    /* border: 3px solid black; */
+    background: linear-gradient(315deg, #140e0c 0.000%, #33275d 20.000%, #5951ad 40.000%, #8574ea 60.000%, #b67cff 80.000%, #ed63f7 100.000%);
+    display: flex;
+    justify-content: space-between;   
+}
+.navlogo{
+    /* border: 2px solid black; */
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight:bold;
+    /* color: aliceblue; */
+    font-family: 'poppins', sans-serif;
+ }
+
+.navlinks{
+    width: 500px;
+    height: 40px;
+
+    /* border: 2px solid black; */
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-left: 150px;
+    padding-top: 10px;
+    a{
+        font-size:20px;
+        color:white;
+        text-decoration: none;
+   }
+}
+.contentbox{
+    background-color: white;
+    width:70%;
+    /* border: 2px solid yellow; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    box-shadow: 1px 1px 50px black;
+}
+
+#item1,#item2,#item3{
+    width:90%;
+    margin: auto;
+    height:auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+  .item1Content,.item2Content,.item3Content{
+        /* border: 2px solid green; */
+        color:black;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        font-weight: 90;
+
+    }
+    #sweet1,#sweet2,#sweet3{
+        width:200px;
+        height:196px;
+        border-radius: 80px;
+        box-shadow: 20px 20px 40px black;
+       
+    }
+    .item1Image{
+        position: relative;
+        width:200px;
+        height: 196px;
+        transition: all 0.6s linear;
+    }
+   .item1Image .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background-color: rgba(102, 102, 97, 0.358);
+    border-radius:80px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s linear;
+    span{
+        font-size: 20px;
+        font-weight: bold;
+        color:white;
+    }
+   }
+   .item1Image:hover{
+        transform: scale(1.12); 
+    }
+    /* itme1image job hover kre toh overlay ki property set */
+    .item1Image:hover .overlay{
+        opacity: 1;
+    }
+
+
+
+
+ .footerbox{
+    
+    display: flex;
+    justify-content: center;
+    width:100%;
+    color: white;
+    height: 30px;
+    background: linear-gradient(315deg, #140e0c 0.000%, #33275d 20.000%, #5951ad 40.000%, #8574ea 60.000%, #b67cff 80.000%, #ed63f7 100.000%); }
+ .footerbox p{
+    font-size: 20px;
+ }

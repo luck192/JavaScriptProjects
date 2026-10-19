@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,h2{
+            border:2px solid green;
+            border-radius: 10px;
+            background-color: beige;
+            padding-left: 10px;
+        }
+        img[alt="coding photo"]{
+            float: right;
+        }
+        .container{
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: bisque;
+        }
+        input,textarea{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="container">
+     <h1>Event Registration</h1>
+  
+     <h2>If you are not well You can consult for Free, OtherWise Register</h2>
+     <button style="background-color: beige;"><a href="http://127.0.0.1:5500/form2.html">consult</a></button>
+
+     <br><br>
+      <img src="coding.jpg" width="100px" height="100px" alt="coding photo">
+     <label for="name1">Name:</label>
+     <br>
+     <input type="text" name="FullName" id="name1">
+      <br>
+     <label for="email">Email:</label>
+     <br>
+     <input type="text" name="takingEmail" id="email">
+      <br>
+     <label for="phone">Phone:</label>
+     <br>
+     <input type="tel" name="phoneNum" id="phone">
+     <br><br>
+
+     <label for="occ">occupation:</label>
+     <select name="occupation" id="occ">
+        <option value="other">other</option>
+        <option value="bussines">busines</option>
+        <option value="houseWife">houseWife</option>
+        <option value="job">jobs</option>
+     </select>
+     <br>
+
+     <fieldset>
+        <legend>Topic of intrest</legend>
+     <label for="HTML1">HTML</label>
+     <input type="checkbox" name="HTML" id="HTML1">
+     <br>
+     <label for="css1">CSS</label>
+     <input type="checkbox" name="css" id="css1">
+     <br>
+     <label for="jS1">Java Script</label>
+     <input type="checkbox" name="JAVASCRIPT" id="js1">
+     </fieldset>
+
+     <br>
+     <label for="C1">comments:</label>
+     <br>
+     <textarea name="comments" id="C1" placeholder="enter coments" cols="20" rows="10"></textarea>
+     <br>
+     <label for="button1"></label>
+     <input type="submit" name="RegisterButton" value="register" id="button1">
+     <a href="http://127.0.0.1:5500/index.html">prev</a>
+    
+    </div>
+
+</body>
+</html>

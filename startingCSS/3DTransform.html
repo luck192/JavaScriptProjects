@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body{
+            width: 100vw;
+            height: 100vh;
+        } */
+        .container{
+            width: 100vw;
+            min-height:100vh;
+            background-color: beige;
+            padding :3rem;
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+    
+        }
+        .item{
+            height:250px;
+            width:150px;
+            background-color: rgb(94, 94, 134);
+            border: 2px solid black;
+            padding:2rem;
+            transition:all 0.6s linear;
+        }
+        
+        #text0:hover{
+            transform: rotateX(45deg);
+        }
+        #text1:hover{
+            transform: rotateY(45deg);
+        }
+        #text2:hover{
+            transform: rotateZ(45deg);
+        }
+        #text3:hover{
+            transform: translateX(100px);
+        }
+        #text4:hover{
+            transform: translateY(100px);
+        }
+        #text5:hover{
+            transform:perspective(100px) translateZ(-100px);
+           
+        }
+        #text6:hover{
+            transform:scaleX(1.2)
+        }
+        #text7:hover{
+            transform: scaleY(1.2);
+        }
+        #text8:hover{
+            transform:perspective(300px)  scaleZ(2) rotateY(-45deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item "id="text0">RotateX</div>
+
+        <div class="item" id="text1">RotateY</div>
+        <div class="item" id="text2">RotateZ</div>
+        <div class="item" id="text3">TranslateX</div>
+        <div class="item" id="text4">TranslateY</div>
+        <div class="item" id="text5">TranslateZ</div>
+        <div class="item" id="text6">ScaleX</div>
+        <div class="item" id="text7">ScaleY</div>
+        <div class="item" id="text8">ScaleZ</div>
+    </div>
+</body>
+</html>

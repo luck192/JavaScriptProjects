@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            min-height: 100%;
+            width: 100%;
+            background-color: rgb(157, 148, 138);
+            display: grid;
+            border: 2px solid black;
+            gap:4rem;
+            grid-template-areas: 
+             "a a a"
+             "b c c"
+             "b d e"
+             "f f f"
+            ;
+            padding: 5rem;
+        }
+        .items{
+            background-color: rgba(22, 194, 203, 0.759);
+            border:2px solid black;
+            padding: 3rem;
+            color:white;
+        }
+        .Header{
+            grid-area: a;
+        } 
+        .Header1{
+             grid-area: b;
+        }
+        .Header2{
+          grid-area: c;
+        }
+        .Header3{
+            grid-area: d;
+        }.Header4{
+             grid-area: e;
+        }
+        .Header5{
+             grid-area: f;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items Header">Header</div>
+        <div class="items Header1">sidebar</div>
+        <div class="items Header2">content1</div>
+        <div class="items Header3">content2</div>
+        <div class="items Header4">content3</div>
+        <div class="items Header5">footer</div>
+    </div>
+</body>
+</html>

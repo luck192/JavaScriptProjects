@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+</head>
+<style>
+    .container{
+        width:5000px;
+        height: 100vh;
+        background-color: black;
+        position: relative;
+    }
+    img[alt="background"]{
+        position: absolute;
+        top:400px;
+        left:0px;
+        height: 400px;
+        width:5000px ;
+        animation: bgmove 5s linear 1s infinite  ; 
+    }
+   @keyframes bgmove {
+     0%{
+        left:-3000px;
+     }
+     100%{
+        left:0px;;
+     }
+   }
+   /* ye toh mne khud bnaya h idea lia h youtube s */
+    .car{
+         position:absolute;
+         top:650px;
+         left:900px;
+         width:250px;
+         height: 80px;   
+         mix-blend-mode: multiply;
+         animation: drivercar 5s linear 1s infinite forwards ; 
+
+    }
+    @keyframes drivercar{
+      0%{
+        left:1700px;
+      }
+      100%{
+        left:0px;
+      }
+    }
+    img[alt="tyre1"]{
+        position:absolute;
+        border-radius: 50%;
+        top:69px;
+        left:30px;
+        width:48px;
+        height:35px;
+
+        animation: spin 0.6s linear 1s infinite ;
+    }
+    img[alt="tyre2"]{
+        position:absolute;
+        border-radius:50%;
+        top:70px;
+        left:219px;
+        width:44px;
+        height:35px;
+        animation: spin 0.6s linear 1s infinite ;
+    }
+
+    @keyframes spin {
+       
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+        
+    }
+      
+</style>
+<body>
+    <div class="container">
+        <img src="background.png" alt="background">
+
+        <div class="car"> 
+            <img  src="car - Copy.png" alt="car1">
+             <img src="tyre.png" alt="tyre1">
+            <img src="tyre.png" alt="tyre2">
+        </div>
+
+    </div>
+</body>
+</html>

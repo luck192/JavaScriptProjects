@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styleweather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="searchBox">
+            <div class="inputCityBox">
+              <input type="text" spellcheck="false" placeholder="Enter city Name" id="cityinput">
+            </div>
+            <div class="searchicon ">
+                <img id="imgIcon" src="/javaScript/WeatherProject/images/search.png" alt="searchBar">
+            </div>
+        </div>
+
+        <div class="middleBox">
+            <img id="weathericon" src="/javaScript/WeatherProject/images/clouds.png" alt="weatherImg">
+            <p id="WeatherDescription">
+                <!-- LOAD by js -->
+            </p>
+            <h1 id="temperature">TEMP</h1>
+            <h2 id="cityName">CITY</h2>
+        </div>
+
+        <div class="footer">
+            <div class="leftBox">
+                <img src="/javaScript/WeatherProject/images/humidity.png" alt="humidPic">
+                <div class="Humidity">
+                    <h2 id="humidPercentage"></h2>
+                    <p id="humidContent">humidity</p>
+                </div>
+            </div>
+
+            <div class="rightBox">
+                <img src="/javaScript/WeatherProject/images/wind.png" alt="windpic">
+                <div class="wind">
+                     <h2 id="windSpeed"></h2>
+                    <p id="windcontent">windSpeed</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>

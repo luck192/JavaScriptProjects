@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css main Project</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         .body{
+            width: 100%;
+            height: 100%;
+         }
+        .container{
+            min-height: 100%;
+            width: 100%;
+            border: 2px solid black;
+            background-color: white;
+        }
+        .maincontent{
+          width:70%;
+          height:100%;
+          margin:auto ;
+          
+          /* border: 2px solid black; */
+          /* background-color: rgba(209, 201, 201, 0.942); */
+           
+        }
+        .navbar{
+            width:100%;
+            height:100px;
+            /* border:2px solid red; */
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo{
+          display: flex;
+          gap:4px;
+          /* border:2px solid rgb(200, 255, 0); */
+          padding-top: 7px;
+          font-family:Arial, Helvetica, sans-serif;
+        }
+        #name{
+            font-weight: bold;
+        }
+        #logoimg{
+
+          width:20px;
+          height:20px;
+          /* border:2px solid rgb(13, 0, 255); */
+          margin-top: 5px;
+        }
+        .middleContent{
+            display: flex;
+            width:500px;
+            justify-content: space-evenly;
+            padding-top: 10px;
+            padding-left: 40px;
+            gap:10px;
+            /* border:2px solid rgb(57, 224, 82); */
+        }
+        .middleContent a{
+             font-weight: 800;
+            text-decoration: none;
+            color:black;
+            font-size: 1.3rem;
+        }
+        .contact{
+            width:100px;
+            height: 40px;
+            /* border:2px solid rgb(0, 255, 76); */
+            margin-top:5px;
+        }
+        .contact button{
+            width:100%;
+            height: 100%;
+            background-color: rgba(48, 33, 222, 0.833);
+            border-radius: 8px;
+        }
+        .contact a{
+
+            text-decoration: none;
+            color:white;
+            font-size: 15px;
+
+        }
+        #main{
+            width:100%;
+            height:100%;
+        }
+        .leftnright{
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid aqua; */
+            margin-top: 20px;
+            width:100%;
+            height:60vh;
+        }
+        @media screen and (min-width:895px)  {
+             .leftnright{
+                flex-direction: row;
+             }
+        }
+        .middleBox{
+            width:100%;
+            height:100vh;
+            margin-top: 20px;
+            /* border: 2px solid aqua; */
+            display: flex;
+            flex-direction: column;;
+            
+        }
+        .heading{
+             padding-top:130px;
+        }
+        .heading a{
+            text-decoration: none;
+            color: rgba(48, 33, 222, 0.833);
+            font-weight:bold;
+            font-size: 30px;
+            margin-left: 5px;
+        }
+        .leftbox{
+            
+            width:60%;
+            height:50%;
+            display: flex;
+            /* overflow: auto; */
+            flex-direction: column;
+            /* border: 1px solid black; */
+            padding-right: 110px;
+            gap:30px;
+            animation: slide 1.6s ease-out 0s  forwards ;
+        }
+        .leftbox p{
+            font-size: 20px;;
+        }
+        #seamless{
+            font-size: 4.5rem;
+            
+        }
+        .rightBox {
+            /* border: 2px solid gold; */
+            width:40%;
+            height:50%;
+            margin-top:20px;
+            
+        }
+
+        .rightBox img{
+            height:100%;
+            width:100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px; 
+            box-shadow: 10px 10px 30px black;
+             /* animation: slide 2s ease-out 0s  forwards ; */
+        }
+        .buttondiv{
+            width:50%;
+            height:40px;
+            /* border: 2px solid crimson; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttondiv button{
+           width:45%;
+        }
+        #leftbutton{
+           background-color: rgba(63, 63, 209, 0.879);
+            border-radius: 7px;
+        }
+         #rightbutton{
+            background-color: rgb(29, 28, 28);
+            border-radius: 7px;
+        }
+        #leftbutton a,#rightbutton a{
+           color:white;
+           text-decoration: none;
+           font-size: 20px;
+          
+        }
+        .footer{
+            width:100%;
+            height:42px;
+            /* border:2px solid green; */
+            margin-top: 120px;
+            display: flex;
+            justify-content: center;
+            font-size: 2.1rem;
+            font-weight: bold;
+           animation: slide 1.8s ease-out 0s  forwards ;
+        }
+        @keyframes slide {
+           0%{
+            transform: translateX(-100%);
+            opacity:0;
+           }          
+           100%{
+            transform: translateX(0);
+           }  
+        }
+
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="maincontent">
+            <header>
+                 <div class="navbar">
+                    <div class="logo">
+                      <img id="logoimg" src="boost.png" alt="img">
+                       <h2 id="name">StudySync</h2>
+                    </div>
+                    <div class="middleContent">
+                     <a href="#">Home</a>
+                     <a href="#">Features</a>
+                     <a href="#">Pricing</a>
+                     <a href="#">Blog</a>
+                     <a href="#">About</a>
+                    </div>
+                    <div class="contact">
+                       <button><a href="#">Contact us</a></button>
+                   </div>
+            </div>
+            </header>
+           
+           <main id="main">
+             <div class="middleBox">
+
+               <div class="leftnright">
+                 <div class="leftbox">
+
+                   <div class="heading">
+                    <a href="#">Very Proud to introduce</a>
+
+                    <h1 id="seamless">Seamless Learning for Brighter Futures</h1>
+                   </div>
+
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsum possimus repellat molestiae impedit expedita nesciunt incidunt, m sequi, dicta fugiat animi maiores accusamus vero sequi expedita nostrum non obcaecati impedit labore, numquam delectus fugiat, voluptatum cumque incidunt necessitatibus.</p>
+
+                  <div class="buttondiv">
+                        <button id="leftbutton">
+                           <a href="#">Start now</a>
+                        </button>
+                        <button id="rightbutton"> 
+                            <a href="#">Take Tour</a>
+                        </button>
+                  </div>
+
+                </div>
+                <div class="rightBox">
+                  <img src="mainimg.png" alt="img">
+                </div>
+               </div>
+
+               <div class="footer">
+                Trusted by somone
+               </div>
+
+            </div>
+            
+           </main>
+
+         
+
+        </div>
+    </div>
+   
+</body>
+</html>

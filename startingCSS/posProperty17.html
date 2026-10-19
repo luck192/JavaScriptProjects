@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POsiton property</title>
+    <style>
+      .container{
+        border:2px solid green;
+        position: relative;
+        background-color: beige;
+        height:3500px;
+      }
+      input[type="image"]{
+          margin:5px;
+          width: 250px;
+          height:200px; 
+          border: 3px solid black; 
+        }
+        input[alt="logo"]{
+          /* this is relative */
+          position: fixed;
+          
+        }
+       input[alt="eyePhoto"]{
+        /* isme gap ht jyga or overlapping jone m chle jyga */
+        position: absolute;
+        /* relative to closest ancestior */
+        top:100px;
+       }
+        input[alt="mountain"]{
+        /* fixedposition; */
+        position:absolute;
+        top: 10px;
+       }
+       .new{
+        background-color: aqua;
+        height:5000px;
+
+       }
+     
+      
+
+    </style>
+</head>
+<body>
+    <!-- CSS POSTION PROPERTY -->
+      <div class="container">
+        
+        <input type="image" src="logo.jpg" class="img1" alt="logo">
+        <input type="image" src="eyeimage.jpg"  alt="eyePhoto">
+        <input type="image" src="new lptpo.jpg"alt="laptop">
+        <input type="image" src="mountain.webp"alt="mountain">
+
+      </div>
+       <div class="new">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequatur omnis, ea sit magnam tempora recusandae provident nam voluptate reprehenderit modi at hic atque cupiditate corrupti aspernatur, repellendus exercitationem culpa quae aliquid aut alias! Voluptatum maxime repellat, ut ratione nisi excepturi explicabo sunt. Sint inventore aliquid corporis soluta error officiis.</div>
+      
+</body>
+</html>
